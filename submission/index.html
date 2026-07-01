@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techika Hub</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+
+</head>
+
+<body>
+
+
+    <header>
+        <nav class="navbar">
+            <img src="images/techikalogo.png" alt="logo">
+
+            <h2 class="logo">Techika Hubs</h2>
+
+
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Programs</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#register">Register</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <main>
+        <section id="home" class="home">
+
+            <div class="home-content">
+
+                <h1>
+                    Empowering Young Coders In Kenya's Informal-settlements
+                </h1>
+
+                <p>
+                    Developing future-ready STEM skills through programming, robotics, and innovation.
+                </p>
+
+                <div class="home-buttons">
+
+                    <a href="#register" class="btn">
+                        Register
+                    </a>
+
+                    <a href="#about" class=" btn btn-secondary">
+                        Learn More
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <section id="services" class="programmes">
+
+            <h2>Learning Adventure for Young Programmers</h2>
+
+            <div class="program-flex">
+
+                <div class="program-card">
+                    <h3>Scratch Programming</h3>
+
+                    <p>
+                        Learn coding basics using visual blocks,
+                        animations and games.
+                    </p>
+                </div>
+
+                <div class="program-card">
+                    <h3>Python Turtle</h3>
+
+                    <p>
+                        Build graphics, animations and interactive
+                        applications using Python.
+                    </p>
+                </div>
+
+                <div class="program-card">
+                    <h3>Robotics</h3>
+
+                    <p>
+                        Apply computing and engineering skills to build robots.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="banner">
+
+            <h2>
+                WE SUPPORT OUR YOUNG LEARNERS THROUGHOUT THEIR PROGRAMMING JOURNEY
+            </h2>
+
+        </section>
+
+
+
+        <section class="stats">
+
+            <div class="stat">
+                <h3>20+</h3>
+                <p>Students</p>
+            </div>
+
+            <div class="stat">
+                <h3>3</h3>
+                <p>Courses</p>
+            </div>
+
+            <div class="stat">
+                <h3>3</h3>
+                <p>Days Weekly</p>
+            </div>
+
+            <div class="stat">
+                <h3>100%</h3>
+                <p>Practical Learning</p>
+            </div>
+
+        </section>
+
+
+        <section id="about" class="about">
+
+            <div class="about-image">
+
+                <img src="images/side-image.jpg" alt="Coding Student">
+
+            </div>
+
+            <div class="about-text">
+
+                <h2>
+                    Your Journey from Curious Learner to Young Innovator Starts Here!
+                </h2>
+
+                <p>
+                    Get ready to code, create, and discover! Along the way, you'll:
+                </p>
+
+                <ol>
+                    <li>Learn Scratch Programming</li>
+                    <li>Build Interactive Games</li>
+                    <li>Discover Python Turtle</li>
+                    <li>Build hands-on robotic projects</li>
+                    <li>Create Real-world Projects</li>
+                    <li>Develop Problem-Solving Skills</li>
+
+                </ol>
+
+                <a href="#register" class="btn">
+                    Learn More
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+        <section id="projects" class="projects">
+
+            <h2>Featured Programmes</h2>
+
+            <div class="project-grid">
+
+                <div class="project">
+                    <img src="images/scratch-image.jpg" alt="student working with scratch" >
+                    <h3>scratch</h3>
+                </div>
+
+                <div class="project">
+                    <img src="images/turtle.jpg" alt="student working with turtle">
+                    <h3>Python Turtle</h3>
+                </div>
+
+                <div class="project">
+                    <img src="images/robotics.png" alt="image or robot">
+                    <h3>Robotics</h3>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section id="register" class="register">
+
+            <h2>Register Your Student</h2>
+
+            <form id="regform" method="POST" action="post.php">
+
+                <label for="parent-name">Parent Name</label>
+                <input type="text" id="parent-name">
+
+                <label for="student-name">Student Name</label>
+                <input type="text" id="student-name">
+
+                <label for="student-age">Age</label>
+                <input type="number" id="student-age" placeholder="12-15">
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="0712345678">
+
+                <button type="submit">Submit Registration</button>
+            </form>
+
+        </section>
+
+
+        <section class="cta">
+
+            <h2>
+                Ready To Start Learning Coding?
+            </h2>
+
+            <a href="#register" class="btn">
+                Register Now
+            </a>
+
+        </section>
+    </main>
+    <footer>
+        <p>© 2026 Techika Hub. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>

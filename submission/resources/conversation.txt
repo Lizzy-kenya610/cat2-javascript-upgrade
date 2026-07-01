@@ -1,0 +1,7 @@
+For this project I spoke with the Founder of Techika Hubs, which is a community initiative in Kibera that teaches students digital skills such as Scratch programming, python turtle and robotics. 
+
+The main audience for the website include parents, teachers, sponsors, community members and other stakeholders. The main aim of making the website was to raise awaraness about the program and to communicate its impact in Kibera.
+
+The founder preferred a children-friendly interface, professional design with warm colors that appear inviting to both children and adults. He also specifically requested for key sections such as the registration form, a full list of the programmes offered as well as the statistics of what the organization has achieved so far.
+
+The desired action for users of the website is to learn about the organization, possibly register their students or become sponsors for the program.

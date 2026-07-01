@@ -1,0 +1,405 @@
+:root {
+    --primary: #E25B05;
+    --primary-dark: #C84F04;
+    --white: #FFFFFF;
+    --light: #FFF7F2;
+    --lighter: #FFFAF7;
+    --text: #333333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: var(--white);
+    color: var(--text);
+    line-height: 1.7;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Young Serif', serif;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+header {
+    background-color: var(--primary);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 10px;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.navbar img {
+    width: 20%;
+}
+
+.logo {
+    color: var(--white);
+}
+
+.nav-links {
+    list-style: none;
+
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: var(--white);
+    text-decoration: none;
+    list-style: none;
+
+    padding: 8px 18px;
+
+    border: 1px solid var(--white);
+    border-radius: 8px;
+
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: var(--white);
+    color: var(--primary);
+}
+
+.home {
+    /* did some research here*/
+    background-image: url("../images/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-color: transparent;
+
+
+    text-align: center;
+    color: var(--white);
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.home-content {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.home-small {
+    letter-spacing: 3px;
+}
+
+.home h1 {
+    font-size: 3.2em;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.home-buttons {
+    margin-top: 20px;
+}
+
+.home p {
+    color: var(--white);
+    font-weight: 600;
+    font-size: 20px;
+}
+
+
+.btn {
+    display: inline-block;
+
+    text-decoration: none;
+
+    background-color: var(--primary);
+    color: var(--white);
+
+    padding: 12px 25px;
+
+    border-radius: 8px;
+    border: 1px solid var(--primary);
+
+    margin: 5px;
+}
+
+.btn:hover {
+    background-color: var(--primary-dark);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 1px solid var(--white);
+}
+
+.btn-secondary:hover {
+    background-color: var(--white);
+    color: var(--primary);
+}
+
+section {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+
+    padding: 32px;
+
+    background-color: var(--lighter);
+
+    border-left: 7px solid var(--primary);
+    border-radius: 8px;
+
+    transition: border-color 0.5s ease;
+}
+
+section:hover {
+    border-left-color: var(--primary-dark);
+}
+
+section h2 {
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+.programmes {
+    background-color: var(--white);
+}
+
+.program-flex {
+    display: flex;
+    gap: 20px;
+}
+
+.program-card {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.program-card h3 {
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+.banner {
+    background-color: var(--primary);
+    color: var(--white);
+    text-align: center;
+}
+
+.banner h2 {
+    color: var(--white);
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.stat h3 {
+    color: var(--primary);
+    font-size: 2em;
+}
+
+.about {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+
+}
+
+.about ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.about-image {
+    width: 40%;
+}
+
+.about-text {
+    width: 50%;
+}
+
+.about-text ul {
+    padding-left: 20px;
+}
+
+.about-text li {
+    margin-bottom: 8px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 25px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+
+.project {
+    width: 100%;
+    background-color: var(--white);
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid var(--light)
+}
+
+.project img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.project h3 {
+    text-align: center;
+    color: var(--text);
+    font-size: 1.2rem;
+}
+
+.register {
+    background-color: var(--light);
+}
+
+form {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 700;
+    color: var(--text);
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+}
+
+button {
+    width: 100%;
+
+    background-color: var(--primary);
+    color: var(--white);
+
+    border: none;
+    border-radius: 8px;
+
+    padding: 12px;
+
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: var(--primary-dark);
+}
+
+.cta {
+    background-color: var(--primary);
+    text-align: center;
+    color: var(--white);
+}
+
+.cta h2 {
+    color: var(--white);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--primary);
+}
+
+footer p {
+    color: var(--white);
+}
+
+@media screen and (max-width: 730px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .program-flex {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .stats {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+
+    .about-text {
+        width: 80%;
+    }
+
+    .about-image {
+        width: 70%;
+        height: 50%;
+        object-fit: cover;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .home h1 {
+        font-size: 2em;
+    }
+}
