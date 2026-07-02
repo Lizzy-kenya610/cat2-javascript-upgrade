@@ -1,0 +1,22 @@
+Techika Hub JavaScript Features
+
+1. Dynamic Program List
+- Program cards are stored in a JavaScript array of objects.
+- Rendered dynamically using forEach().
+
+2. Wishlist
+- Users can add courses to a wishlist.
+- New list items are created using createElement() and appendChild().
+- Each item has a Delete button that removes it using remove().
+
+3. Registration Form
+- Form submission uses event.preventDefault().
+- Input values are validated.
+- Success and error messages are displayed dynamically.
+
+4. Local Storage
+- Parent name is stored using localStorage.
+- The value is restored after page refresh.
+
+5. Banner Interaction
+- Clicking the banner toggles a hidden caption using classList.toggle().
