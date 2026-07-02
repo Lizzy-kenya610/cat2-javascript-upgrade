@@ -23,4 +23,33 @@ programs.forEach(function (program) {
    programList.appendChild(card);
 });
 
+let wishlistInput = document.querySelector("#wishlistInput");
+let addWishlistButton = document.querySelector("#wishlistForm button");
+let wishlistItems = document.querySelector("#wishlistItems");
+
+addWishlistButton.addEventListener("click", event=> {
+    event.preventDefault();
+    if (wishlistInput.value!=""){
+    let li = document.createElement("li");
+    let button = document.createElement("button");
+    button.className = "delete-btn";
+    
+    li.textContent = wishlistInput.value;
+    button.textContent = "Delete";
+    button.addEventListener("click", event => {
+    li.remove();
+});
+    li.appendChild(button);
+    wishlistItems.appendChild(li);
+    wishlistInput.value = "";
+
+    }
+
+    else {
+
+    alert("Please enter a course.");
+
+}
+});
+
 

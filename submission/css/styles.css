@@ -403,3 +403,25 @@ footer p {
         font-size: 2em;
     }
 }
+
+#wishlistItems li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.delete-btn {
+    width: auto;
+    padding: 6px 12px;
+    margin-left: 15px;
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #c9302c;
+}
