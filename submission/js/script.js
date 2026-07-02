@@ -56,7 +56,7 @@ let regForm = document.querySelector("#regform");
 let formMessage = document.querySelector("#form-message");
 let parentName = document.querySelector("#parent-name");
 
-parentName.value = localStorage.getItem("parentName") ||"";
+parentName.value = localStorage.getItem("parentName") || "";
 
 //console.log(regForm);
 //console.log(formMessage);
@@ -86,3 +86,12 @@ regForm.addEventListener("submit", event => {
         phone.value = "";
     }
 });
+
+let bannerImage = document.querySelector(".home");
+let bannerCaption = document.querySelector("#banner-caption");
+//console.log(homeBanner);
+//console.log(bannerCaption);
+
+bannerImage.addEventListener("click", event => {
+    bannerCaption.classList.toggle("show-caption");
+})

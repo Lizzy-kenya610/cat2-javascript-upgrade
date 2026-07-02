@@ -425,3 +425,14 @@ footer p {
 .delete-btn:hover {
     background-color: #c9302c;
 }
+
+.hidden-caption {
+    display: none;
+    margin-top: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.show-caption {
+    display: block;
+}
