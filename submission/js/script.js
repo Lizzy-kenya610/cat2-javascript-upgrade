@@ -54,11 +54,15 @@ addWishlistButton.addEventListener("click", event => {
 
 let regForm = document.querySelector("#regform");
 let formMessage = document.querySelector("#form-message");
+let parentName = document.querySelector("#parent-name");
+
+parentName.value = localStorage.getItem("parentName") ||"";
+
 //console.log(regForm);
 //console.log(formMessage);
 regForm.addEventListener("submit", event => {
     event.preventDefault();
-    let parentName = document.querySelector("#parent-name");
+
     let studentName = document.querySelector("#student-name");
     let studentAge = document.querySelector("#student-age");
     let phone = document.querySelector("#phone");
@@ -74,7 +78,9 @@ regForm.addEventListener("submit", event => {
         formMessage.textContent = "Registration was succcessful for " + studentName.value + "!";
         formMessage.style.color = "green";
 
-        parentName.value = "";
+        localStorage.setItem("parentName", parentName.value);
+
+
         studentName.value = "";
         studentAge.value = "";
         phone.value = "";
